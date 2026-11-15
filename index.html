@@ -1,0 +1,1004 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+
+  <title>UNSCRIPTED® — Artist Portfolio</title>
+
+  <meta name="description" content="Discover the musical world of an independent singer, live performer and music educator.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: "#101010",
+            paper: "#F1EEE7",
+            orange: "#FF5938",
+            ash: "#99968F"
+          },
+          fontFamily: {
+            display: ["Space Grotesk", "sans-serif"],
+            body: ["Manrope", "sans-serif"],
+            serif: ["Cormorant Garamond", "serif"]
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-obsidian text-paper font-body overflow-x-hidden">
+
+  <!-- NAVIGATION -->
+  <header class="site-header fixed top-0 left-0 w-full z-50 px-5 md:px-12 ">
+    <nav class=" bg-black-600 max-w-[1700px] mx-auto flex justify-between items-center py-6  ">
+
+      <a href="#home" class="logo font-display font-bold text-2xl tracking-tighter">
+        UN<span class="text-orange">/</span>SCRIPTED
+        <sup class="text-orange text-xs">®</sup>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-10 text-[11px] uppercase tracking-[0.2em]">
+        <a href="#story" class="menu-link">The Story</a>
+        <a href="#live" class="menu-link">Live</a>
+        <a href="#sound" class="menu-link">Sound</a>
+        <a href="#academy" class="menu-link">Academy</a>
+      </div>
+
+      <a href="#contact" class="hidden md:flex items-center gap-3 text-xs uppercase tracking-widest border border-paper/30 rounded-full px-6 py-3 hover:bg-orange hover:border-orange hover:text-obsidian transition-all">
+        Work Together
+        <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+      </a>
+
+      <button id="menuBtn" class="lg:hidden" aria-label="Toggle navigation" aria-expanded="false">
+        <i data-lucide="menu" class="w-7 h-7"></i>
+      </button>
+    </nav>
+
+    <!-- MOBILE NAV -->
+    <div id="mobileNav" class="mobile-nav lg:hidden">
+      <a href="#story">01 — The Story</a>
+      <a href="#live">02 — Live</a>
+      <a href="#sound">03 — Sound</a>
+      <a href="#academy">04 — Academy</a>
+      <a href="#contact">05 — Contact</a>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- =================================
+         SECTION 01 — EXPERIMENTAL HERO
+    ================================== -->
+
+    <section id="home" class="hero-section relative min-h-screen bg-paper text-obsidian overflow-hidden">
+
+      <div class="hero-top absolute top-32 left-5 md:left-12 right-5 md:right-12 flex justify-between text-[10px] md:text-xs uppercase tracking-[0.2em]">
+        <span>Independent Artist / India</span>
+        <span>Music Without Boundaries ©</span>
+      </div>
+
+      <div class="max-w-[1700px] mx-auto px-5 md:px-12 pt-44 pb-16">
+
+        <div class="hero-grid grid lg:grid-cols-12 gap-8 items-center">
+
+          <!-- TYPOGRAPHY -->
+          <div class="lg:col-span-8 relative z-10">
+
+            <p class="hero-kicker text-xs uppercase tracking-[0.3em] mb-8">
+              <span class="inline-block w-8 h-[2px] bg-orange mr-3 align-middle"></span>
+              The sound of individuality
+            </p>
+
+            <h1 class="hero-heading font-display font-bold tracking-[-0.095em] leading-[0.77] text-[clamp(4.2rem,12.5vw,13rem)]">
+
+              <span class="block">I DON'T</span>
+
+              <span class="block flex items-center gap-4">
+                JUST
+                <span class="font-serif italic text-orange font-medium">SING.</span>
+              </span>
+
+              <span class="block text-orange">I CREATE</span>
+
+              <span class="block">FEELINGS<span class="text-orange">.</span></span>
+
+            </h1>
+
+            <div class="hero-bottom flex flex-col sm:flex-row justify-between sm:items-end gap-8 mt-14">
+
+              <p class="max-w-xs text-black/60 text-sm leading-7">
+                A voice. A story. An experience.
+                Exploring the world of music through
+                live performances and education.
+              </p>
+
+              <a href="#live" class="inline-flex items-center gap-4 group">
+                <span class="w-14 h-14 bg-orange rounded-full flex items-center justify-center group-hover:rotate-45 transition-transform">
+                  <i data-lucide="arrow-down-right" class="w-6 h-6"></i>
+                </span>
+                <span class="text-[10px] uppercase tracking-[0.2em] font-bold">
+                  Enter my world
+                </span>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- PORTRAIT -->
+          <div class="lg:col-span-4 hero-portrait-wrap relative">
+
+            <div class="hero-portrait relative overflow-hidden">
+
+              <img
+                src="/g2/public/img/Serene Bansuri Player Portrait - Copy.png"
+                alt="Artist portrait"
+                class="hero-portrait-image w-full h-full object-cover"
+              >
+
+              <div class="absolute inset-0 bg-black/10"></div>
+
+              <div class="absolute bottom-6 left-6 text-white">
+                <p class="text-[10px] uppercase tracking-[0.3em]">The Artist</p>
+                <h2 class="font-display text-3xl font-bold">Gulshan Kumar</h2>
+              </div>
+
+            </div>
+
+            <div class="portrait-sticker absolute -right-4 md:-right-8 top-10 bg-orange w-24 h-24 rounded-full flex items-center justify-center rotate-12">
+              <span class="font-display font-bold text-xs text-center uppercase">
+                Feel<br>Everything<br>✳
+              </span>
+            </div>
+
+            <p class="portrait-caption absolute -bottom-10 right-0 text-[9px] uppercase tracking-[0.25em] text-black/50">
+              Artist / Performer / Educator
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="hero-footer border-t border-black/20 mt-24 pt-5 flex justify-between text-[10px] uppercase tracking-[0.2em]">
+          <span>Based in India</span>
+          <span>Available Worldwide</span>
+          <span>01 / 05</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================
+         SECTION 02 — THE STORY
+    ================================== -->
+
+    <section id="story" class="story-section bg-obsidian py-32 md:py-48 px-5 md:px-12">
+
+      <div class="max-w-[1600px] mx-auto">
+
+        <div class="flex justify-between items-center mb-20">
+          <span class="text-orange text-xs tracking-[0.3em] uppercase">01 / The Story</span>
+          <span class="text-ash text-[10px] uppercase tracking-widest">A personal frequency</span>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-14">
+
+          <div class="lg:col-span-8">
+
+            <h2 class="story-heading font-display font-bold text-[clamp(3.5rem,9vw,10rem)] tracking-[-0.085em] leading-[0.85]">
+              MUSIC IS
+              <span class="block text-orange">NOT MY JOB.</span>
+              <span class="block font-serif italic font-medium text-paper">It's my nature.</span>
+            </h2>
+
+          </div>
+
+          <div class="lg:col-span-4 flex flex-col justify-end">
+
+            <div class="w-full h-px bg-white/20 mb-8"></div>
+
+            <span class="text-orange text-xs uppercase tracking-widest mb-5">
+              A little about me
+            </span>
+
+            <p class="text-ash text-sm leading-8">
+              Every artist has a story. Mine is written through melodies,
+              performances, dedication and the people I meet through music.
+
+              From intimate hotel stages to live audiences, I believe
+              every song should leave something behind.
+            </p>
+
+            <p class="font-serif italic text-3xl mt-8 text-paper">
+              "Let the music speak."
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- IMAGE STRIP -->
+        <div class="story-images grid grid-cols-12 gap-3 mt-28 items-start">
+
+          <div class="col-span-7 md:col-span-5">
+            <img
+              src="/g2/public/img/Warm Acoustic Guitar Portrait.png"
+              alt="Artist performance portrait"
+              class="w-full aspect-[4/5] object-cover"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="col-span-5 md:col-span-3 md:mt-32">
+            <img
+              src="/g2/public/img/Serene Bansuri Player Portrait - Copy.png"
+              alt="Musician practicing music"
+              class="w-full aspect-[3/4] object-cover"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="col-span-12 md:col-span-4 md:mt-16 flex flex-col justify-center">
+            <span class="text-orange text-6xl font-display">∞</span>
+            <p class="text-ash text-xs uppercase tracking-widest leading-7 max-w-xs">
+              Always learning. Always performing.
+              Always discovering something new.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================
+         SECTION 03 — LIVE EXPERIENCES
+    ================================== -->
+
+    <section id="live" class="live-section bg-orange text-obsidian py-32 md:py-40 px-5 md:px-12">
+
+      <div class="max-w-[1600px] mx-auto">
+
+        <div class="flex justify-between items-center mb-20">
+          <span class="text-xs uppercase tracking-[0.3em]">02 / The Live Experience</span>
+          <span class="text-xs uppercase tracking-widest">Made for the moment</span>
+        </div>
+
+        <h2 class="live-heading font-display font-bold text-[clamp(4rem,12vw,13rem)] tracking-[-0.1em] leading-[0.78]">
+          BUILT
+          <br>
+          FOR THE
+          <br>
+          <span class="font-serif italic font-medium">STAGE.</span>
+        </h2>
+
+        <div class="grid lg:grid-cols-12 gap-12 mt-24">
+
+          <!-- BIG IMAGE -->
+          <div class="lg:col-span-7 live-main-image relative">
+
+            <img
+              src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=1400&q=90"
+              alt="Live music concert"
+              class="w-full h-[450px] md:h-[650px] object-cover"
+              loading="lazy"
+            >
+
+            <div class="absolute bottom-7 left-7 text-white">
+              <span class="text-xs uppercase tracking-[0.3em]">Live energy</span>
+              <h3 class="font-display text-4xl md:text-6xl font-bold">NO LIMITS.</h3>
+            </div>
+
+          </div>
+
+          <!-- EXPERIENCE LIST -->
+          <div class="lg:col-span-5 flex flex-col justify-center">
+
+            <p class="text-sm leading-7 max-w-sm mb-12">
+              Different stages. Different audiences. One thing remains
+              constant — the connection created through music.
+            </p>
+
+            <div class="live-list">
+
+              <a href="#contact" class="live-row">
+                <span>01</span>
+                <div>
+                  <h3>Hotel Performances</h3>
+                  <p>Luxury lounges / Live evenings</p>
+                </div>
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+
+              <a href="#contact" class="live-row">
+                <span>02</span>
+                <div>
+                  <h3>Concerts & Festivals</h3>
+                  <p>Live stages / Cultural events</p>
+                </div>
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+
+              <a href="#contact" class="live-row">
+                <span>03</span>
+                <div>
+                  <h3>Private Events</h3>
+                  <p>Weddings / Special celebrations</p>
+                </div>
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+
+              <a href="#contact" class="live-row">
+                <span>04</span>
+                <div>
+                  <h3>Collaborations</h3>
+                  <p>Artists / Brands / Productions</p>
+                </div>
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================
+         SECTION 04 — SOUND ARCHIVE
+    ================================== -->
+
+    
+
+<section id="sound" class="sound-section bg-paper text-obsidian py-32 md:py-40 px-5 md:px-12">
+
+  <div class="max-w-[1600px] mx-auto">
+
+    <!-- SECTION TOP -->
+    <div class="flex justify-between items-center mb-20">
+      <span class="text-xs uppercase tracking-[0.3em]">
+        03 / The Visual Archive
+      </span>
+
+      <span class="text-xs uppercase tracking-widest">
+        Watch the performances
+      </span>
+    </div>
+
+    <!-- HEADING -->
+    <div class="grid lg:grid-cols-12 gap-10 items-end mb-24">
+
+      <div class="lg:col-span-8">
+        <h2 class="sound-heading font-display font-bold text-[clamp(4rem,12vw,12rem)] tracking-[-0.1em] leading-[0.8]">
+          PRESS
+          <span class="block font-serif italic font-medium text-orange">
+            PLAY.
+          </span>
+        </h2>
+      </div>
+
+      <div class="lg:col-span-4">
+        <p class="text-black/50 text-sm leading-7 max-w-sm">
+          A collection of live performances, musical covers,
+          acoustic sessions and moments captured through music.
+          Every frame has a story. Every performance has a feeling.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- VIDEO ARCHIVE -->
+    <div class="grid md:grid-cols-2 gap-x-8 gap-y-20">
+
+
+      <!-- VIDEO 01 : LIVE REEL -->
+      <article class="sound-card group">
+
+        <div class="relative overflow-hidden bg-black aspect-[9/16] max-w-[420px] mx-auto">
+
+          <video
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-[1.03]"
+            src="/g2/public/video/WhatsApp Video 2026-11-12 at 14.44.52.mp4"
+            controls
+            playsinline
+            preload="metadata"
+          >
+            Your browser does not support the video tag.
+          </video>
+
+          <span class="absolute top-5 left-5 text-[9px] uppercase tracking-[0.2em] text-white bg-black/40 backdrop-blur-md px-4 py-2 pointer-events-none">
+            01 / Live
+          </span>
+
+        </div>
+
+        <div class="flex justify-between items-start mt-6">
+
+          <div>
+            <span class="text-orange text-[10px] uppercase tracking-[0.25em]">
+              01 / Live Performance
+            </span>
+
+            <h3 class="font-display font-bold text-3xl mt-3">
+              Live Sessions
+            </h3>
+
+            <p class="text-black/45 text-xs mt-2">
+              Moments from live performances.
+            </p>
+          </div>
+
+          <i data-lucide="arrow-up-right" class="w-6 h-6"></i>
+
+        </div>
+
+      </article>
+
+
+      <!-- VIDEO 02 : ACOUSTIC REEL -->
+      <article class="sound-card group md:mt-32">
+
+        <div class="relative overflow-hidden bg-black aspect-[9/16] max-w-[420px] mx-auto">
+
+          <video
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-[1.03]"
+            src="/g2/public/video/WhatsApp Video 2026-11-12 at 14.45.12.mp4"
+            controls
+            playsinline
+            preload="metadata"
+          >
+            Your browser does not support the video tag.
+          </video>
+
+          <span class="absolute top-5 left-5 text-[9px] uppercase tracking-[0.2em] text-white bg-black/40 backdrop-blur-md px-4 py-2 pointer-events-none">
+            02 / Acoustic
+          </span>
+
+        </div>
+
+        <div class="flex justify-between items-start mt-6">
+
+          <div>
+            <span class="text-orange text-[10px] uppercase tracking-[0.25em]">
+              02 / Acoustic
+            </span>
+
+            <h3 class="font-display font-bold text-3xl mt-3">
+              Unplugged Stories
+            </h3>
+
+            <p class="text-black/45 text-xs mt-2">
+              Raw emotions through acoustic music.
+            </p>
+          </div>
+
+          <i data-lucide="arrow-up-right" class="w-6 h-6"></i>
+
+        </div>
+
+      </article>
+
+
+      <!-- VIDEO 03 : STAGE PERFORMANCE -->
+      <article class="sound-card group">
+
+        <div class="relative overflow-hidden bg-black aspect-video">
+
+          <video
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-[1.03]"
+            src="/g2/public/video/WhatsApp Video 2026-11-12 at 14.45.55.mp4"
+           
+            controls
+            playsinline
+            preload="metadata"
+          >
+            Your browser does not support the video tag.
+          </video>
+
+          <span class="absolute top-5 left-5 text-[9px] uppercase tracking-[0.2em] text-white bg-black/40 backdrop-blur-md px-4 py-2 pointer-events-none">
+            03 / Performance
+          </span>
+
+        </div>
+
+        <div class="flex justify-between items-start mt-6">
+
+          <div>
+            <span class="text-orange text-[10px] uppercase tracking-[0.25em]">
+              03 / Stage Performance
+            </span>
+
+            <h3 class="font-display font-bold text-3xl mt-3">
+              On The Stage
+            </h3>
+
+            <p class="text-black/45 text-xs mt-2">
+              The energy of music and live audiences.
+            </p>
+          </div>
+
+          <i data-lucide="arrow-up-right" class="w-6 h-6"></i>
+
+        </div>
+
+      </article>
+
+
+      <!-- VIDEO 04 : BEHIND THE SCENES -->
+      <article class="sound-card group md:mt-32">
+
+        <div class="relative overflow-hidden bg-black aspect-[9/16] max-w-[420px] mx-auto">
+
+          <video
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-[1.03]"
+            src="/g2/public/video/WhatsApp Video 2026-11-12 at 14.45.57.mp4"
+           
+            controls
+            playsinline
+            preload="metadata"
+          >
+            Your browser does not support the video tag.
+          </video>
+
+          <span class="absolute top-5 left-5 text-[9px] uppercase tracking-[0.2em] text-white bg-black/40 backdrop-blur-md px-4 py-2 pointer-events-none">
+            04 / Studio
+          </span>
+
+        </div>
+
+        <div class="flex justify-between items-start mt-6">
+
+          <div>
+            <span class="text-orange text-[10px] uppercase tracking-[0.25em]">
+              04 / Behind The Scenes
+            </span>
+
+            <h3 class="font-display font-bold text-3xl mt-3">
+              Behind The Notes
+            </h3>
+
+            <p class="text-black/45 text-xs mt-2">
+              A glimpse into the creative process.
+            </p>
+          </div>
+
+          <i data-lucide="arrow-up-right" class="w-6 h-6"></i>
+
+        </div>
+
+      </article>
+
+    </div>
+
+
+    <!-- BOTTOM FOOTER -->
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-5 mt-28 pt-8 border-t border-black/15">
+
+      <p class="text-[10px] uppercase tracking-[0.25em] text-black/40">
+        A little music. A lot of memories.
+      </p>
+
+      <span class="text-xs font-serif italic text-orange">
+        Keep the music alive.
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+    <!-- =================================
+         SECTION 05 — MUSIC EDUCATION
+    ================================== -->
+
+    <section id="academy" class="academy-section bg-obsidian text-paper py-32 md:py-44 px-5 md:px-12">
+
+      <div class="max-w-[1600px] mx-auto">
+
+        <div class="flex justify-between items-center mb-20">
+          <span class="text-orange text-xs tracking-[0.3em] uppercase">04 / The Academy</span>
+          <span class="text-ash text-xs uppercase tracking-widest">Teaching through passion</span>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-14">
+
+          <div class="lg:col-span-7">
+
+            <h2 class="academy-heading font-display font-bold text-[clamp(4rem,11vw,11rem)] leading-[0.8] tracking-[-0.09em]">
+              FIND
+              <span class="block text-orange">YOUR</span>
+              <span class="block font-serif italic font-medium">VOICE.</span>
+            </h2>
+
+            <p class="max-w-md text-ash text-sm leading-8 mt-12">
+              Every voice has potential. The right guidance, practice
+              and understanding can help turn that potential into
+              confident musical expression.
+            </p>
+
+            <a href="#contact" class="inline-flex items-center gap-5 mt-12 border border-white/20 px-7 py-5 hover:bg-orange hover:text-obsidian hover:border-orange transition-all">
+              <span class="text-xs uppercase tracking-widest">Start learning</span>
+              <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+            </a>
+
+          </div>
+
+          <!-- LESSONS -->
+          <div class="lg:col-span-5 flex flex-col justify-center">
+
+            <div class="academy-row">
+              <span>01</span>
+              <h3>Vocal Training</h3>
+              <i data-lucide="mic-2"></i>
+            </div>
+
+            <div class="academy-row">
+              <span>02</span>
+              <h3>Voice Development</h3>
+              <i data-lucide="audio-lines"></i>
+            </div>
+
+            <div class="academy-row">
+              <span>03</span>
+              <h3>Stage Confidence</h3>
+              <i data-lucide="users"></i>
+            </div>
+
+            <div class="academy-row">
+              <span>04</span>
+              <h3>Musical Expression</h3>
+              <i data-lucide="music-2"></i>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================
+         SECTION 06 — CONTACT / BOOKING
+    ================================== -->
+
+    <section id="contact" class="contact-section bg-orange text-obsidian py-32 md:py-44 px-5 md:px-12">
+
+      <div class="max-w-[1600px] mx-auto">
+
+        <div class="flex justify-between items-center mb-24">
+          <span class="text-xs uppercase tracking-[0.3em]">05 / Let's Connect</span>
+          <span class="text-xs uppercase tracking-widest">Open for opportunities</span>
+        </div>
+
+        <h2 class="contact-heading font-display font-bold text-[clamp(4rem,13vw,14rem)] leading-[0.78] tracking-[-0.1em]">
+          LET'S
+          <br>
+          MAKE
+          <br>
+          <span class="font-serif italic font-medium">NOISE.</span>
+        </h2>
+
+        <div class="grid md:grid-cols-12 gap-10 mt-28 items-end">
+
+          <div class="md:col-span-7">
+
+            <p class="text-sm max-w-md leading-7 mb-8">
+              Have a performance opportunity, a collaboration idea
+              or want to learn music? Let's start a conversation.
+            </p>
+
+            <a href="mailto:yourmail@example.com?subject=Artist%20Enquiry" class="font-display text-xl md:text-3xl font-bold border-b-2 border-obsidian pb-3 inline-flex items-center gap-4">
+              LET'S TALK
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+          </div>
+
+          <div class="md:col-span-5 grid grid-cols-2 gap-6">
+
+            <div>
+              <span class="text-xs uppercase tracking-widest">Bookings</span>
+              <p class="text-sm mt-3">Live Performances</p>
+              <p class="text-sm">Hotels & Events</p>
+            </div>
+
+            <div>
+              <span class="text-xs uppercase tracking-widest">Connect</span>
+              <p class="text-sm mt-3">Collaborations</p>
+              <p class="text-sm">Music Lessons</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+ 
+<footer id="footer" class="relative overflow-hidden bg-obsidian px-5 py-14 text-paper md:px-12 md:py-20 flex items-center justify-center ">
+
+  <!-- BACKGROUND DECORATION -->
+  <div class="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-orange/10 blur-[120px]"></div>
+  <div class="pointer-events-none absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-orange/5 blur-[100px]"></div>
+
+  <div class="relative z-10 mx-auto max-w-[1600px]">
+
+    <!-- TOP SECTION -->
+    <div class="grid grid-cols-1 gap-14 border-b border-white/10 pb-14 lg:grid-cols-12 lg:gap-10">
+
+      <!-- BRAND -->
+      <div class="lg:col-span-5">
+
+        <a href="#home" class="inline-block font-display text-4xl font-black tracking-[-0.08em] sm:text-5xl">
+          UN<span class="text-orange">/</span>SCRIPTED<span class="text-orange">®</span>
+        </a>
+
+        <p class="mt-5 max-w-sm text-sm leading-7 text-ash sm:text-base">
+          Music has no boundaries. No rules. No limits.
+          Just pure expression, unforgettable performances
+          and the freedom to be yourself.
+        </p>
+
+        <div class="mt-8 flex items-center gap-3">
+
+          <span class="h-2 w-2 animate-pulse rounded-full bg-orange"></span>
+
+          <span class="text-[10px] font-semibold uppercase tracking-[0.25em] text-ash">
+            Creating beyond boundaries
+          </span>
+
+        </div>
+
+      </div>
+
+      <!-- QUICK NAVIGATION -->
+      <div class="lg:col-span-3">
+
+        <p class="mb-6 text-[10px] font-bold uppercase tracking-[0.3em] text-orange">
+          Explore
+        </p>
+
+        <ul class="space-y-4 text-sm">
+
+          <li>
+            <a href="#home" class="footer-link">Home <span>↗</span></a>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">The Artist <span>↗</span></a>
+          </li>
+
+          <li>
+            <a href="#performances" class="footer-link">Performances <span>↗</span></a>
+          </li>
+
+          <li>
+            <a href="#gallery" class="footer-link">Listen & Watch <span>↗</span></a>
+          </li>
+
+          <li>
+            <a href="#academy" class="footer-link">Music Academy <span>↗</span></a>
+          </li>
+
+          <li>
+            <a href="#contact" class="footer-link">Get in Touch <span>↗</span></a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- SOCIAL MEDIA -->
+      <div class="lg:col-span-4">
+
+        <p class="mb-6 text-[10px] font-bold uppercase tracking-[0.3em] text-orange">
+          Follow the frequency
+        </p>
+
+        <p class="mb-7 max-w-xs text-sm leading-6 text-ash">
+          Stay connected. Discover new music, performances
+          and moments behind the sound.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-3">
+
+          <!-- INSTAGRAM -->
+         <a href="https://www.instagram.com/gulshan14690?utm_source=qr&stkn=MWN1ZHMxN3RtazA4aw==" target="_blank" rel="noopener noreferrer">
+            <div aria-label="Instagram" title="Instagram"
+              class="footer-social group">
+
+            <svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/>
+            </svg>
+
+          </div>
+
+          <!-- YOUTUBE -->
+          <!-- <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+            <div aria-label="YouTube" title="YouTube"
+              class="footer-social group">
+
+            <svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="5" width="20" height="14" rx="4"/>
+              <path d="m10 9 5 3-5 3V9Z" fill="currentColor" stroke="none"/>
+            </svg>
+
+            </div>
+          </a>   -->
+
+          <!-- FACEBOOK -->
+          <a href="https://www.facebook.com/share/1dBTjcP1mh/" target="_blank" rel="noopener noreferrer">
+            <div aria-label="Facebook" title="Facebook"
+              class="footer-social group">
+
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.3v3h2.8v8h3.4Z"/>
+            </svg>
+
+            </div>
+          </a>
+
+        </div>
+
+        <!-- CREATIVE SOCIAL MESSAGE -->
+        <div class="mt-10 flex items-center gap-4">
+
+          <div class="h-px w-12 bg-orange/60"></div>
+
+          <span class="text-[10px] uppercase tracking-[0.2em] text-ash">
+            Find us. Feel the music.
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- LARGE CREATIVE BRAND STATEMENT -->
+    <div class="relative overflow-hidden py-12 sm:py-16">
+
+      <div class="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
+
+        <div>
+
+          <p class="mb-4 text-[10px] uppercase tracking-[0.3em] text-ash">
+            The final note?
+          </p>
+
+          <h2 class="font-display text-[clamp(3.5rem,10vw,9rem)] font-black leading-[0.8] tracking-[-0.09em]">
+            STAY
+            <span class="text-orange">UN</span>
+            <span class="block">SCRIPTED.</span>
+          </h2>
+
+        </div>
+
+        <a href="#home"
+          class="group flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/20 text-2xl text-paper transition-all duration-300 hover:-translate-y-2 hover:border-orange hover:bg-orange hover:text-white"
+          aria-label="Back to top">
+
+          <span class="transition-transform duration-300 group-hover:-translate-y-1">
+            ↑
+          </span>
+
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="flex flex-col justify-between gap-5 border-t border-white/10 pt-7 text-[9px] uppercase tracking-[0.2em] text-ash sm:flex-row sm:items-center sm:text-[10px]">
+
+      <p>
+        © <span id="year">2026</span> UNSCRIPTED ARTIST
+      </p>
+
+      <p class="text-white/40">
+        Designed for the love of music.
+      </p>
+
+      <a href="#home" class="transition-colors duration-300 hover:text-orange">
+        Back to top ↑
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+  <!-- ICON INITIALIZATION -->
+  <script>
+
+// Automatically update footer copyright year
+const footerYear = document.getElementById("year");
+
+if (footerYear) {
+  footerYear.textContent = new Date().getFullYear();
+}
+
+    lucide.createIcons();
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileNav = document.getElementById("mobileNav");
+
+    menuBtn.addEventListener("click", () => {
+      const open = mobileNav.classList.toggle("active");
+      menuBtn.setAttribute("aria-expanded", String(open));
+      menuBtn.innerHTML = open
+        ? '<i data-lucide="x"></i>'
+        : '<i data-lucide="menu"></i>';
+
+      lucide.createIcons();
+    });
+
+    mobileNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileNav.classList.remove("active");
+        menuBtn.setAttribute("aria-expanded", "false");
+        menuBtn.innerHTML = '<i data-lucide="menu"></i>';
+        lucide.createIcons();
+      });
+    });
+
+    window.addEventListener("scroll", () => {
+      document.querySelector(".site-header").classList.toggle(
+        "header-scrolled",
+        window.scrollY > 40
+      );
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
