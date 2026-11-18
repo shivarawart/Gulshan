@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#101010">
 
-  <title>UNSCRIPTED® — Artist Portfolio</title>
+  <title>GulshanKumar</title>
 
   <meta name="description" content="Discover the musical world of an independent singer, live performer and music educator.">
 
@@ -44,6 +44,7 @@
 
   <!-- Lucide -->
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="./gsap.js"></script>
 </head>
 
 <body class="bg-obsidian text-paper font-body overflow-x-hidden">
@@ -186,6 +187,7 @@
         </div>
 
       </div>
+      
 
     </section>
 
@@ -741,6 +743,49 @@
 
     </section>
 
+ <!-- GLOBAL MUSIC PLAYER -->
+<!-- FLOATING MUSIC PLAYER -->
+<div class="fixed bottom-6 right-6 z-[9999]">
+
+    <div class="flex items-center gap-3 rounded-full
+        border border-white/20 bg-black/80
+        px-5 py-3 text-white shadow-2xl
+        backdrop-blur-xl">
+
+        <!-- Music Icon -->
+        <div class="flex h-10 w-10 items-center
+            justify-center rounded-full bg-white
+            text-xl text-black">
+            ♫
+        </div>
+
+        <!-- Music Information -->
+        <div>
+            <p class="text-[10px] uppercase
+                tracking-[0.25em] text-white/50">
+                Sound Experience
+            </p>
+
+            <p class="text-sm font-medium">
+                Now Playing
+            </p>
+        </div>
+
+        <!-- Native Audio Controls -->
+        <audio
+            controls
+            loop
+            preload="auto"
+            class="h-8 w-36"
+        >
+            <source src="/2.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+
+    </div>
+
+</div>
+
   </main>
 
 
@@ -947,8 +992,11 @@
 </footer>
 
 
+
+
   <!-- ICON INITIALIZATION -->
   <script>
+
 
 // Automatically update footer copyright year
 const footerYear = document.getElementById("year");
